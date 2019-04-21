@@ -1,0 +1,20 @@
+<!--pages/detail/detail.wxml-->
+<view class='detailContainer'>
+  <text class='title'>{{detailObj.title}}</text>
+  <view class='info'>
+    <text class='author'>{{detailObj.author}}</text>
+    <text class='date'>{{detailObj.date}}</text>
+  </view>
+  <image src='{{detailObj.detailImg}}'></image>
+  <text class='content'>{{detailObj.detail_content}}</text>
+  <view class='btnContainer'>
+    <button class='share' catchtap='handleShare'>分享</button>
+    <button open-type='share'>转发</button>
+    <button class='collect' style='{{collected?"background:red;color:\#fff":""}}' catchtap='handleCollection'>{{collected?'已收藏':'收藏'}}</button>
+  </view>
+  <view class='musicWrapper'>
+    <image class='coverMusic' src='{{detailObj.music.coverImgUrl}}'></image>
+    <text class='titleMusic'>{{detailObj.music.title}}</text>
+    <image catchtap='handleMusicPlay' class='musicIcon' src='{{musicPlay?"/images/icon/stop.png":"/images/icon/play.png"}}'></image>
+  </view>
+</view>

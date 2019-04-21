@@ -1,0 +1,21 @@
+<!--pages/template/list-template.wxml-->
+<template name='listTmp'>
+  <view class='listContainer'>
+    <image class='conImg' src='{{headImgSrc}}'></image>
+      <view class='listInfo'>
+        <text class='title'>{{title}}</text>
+        <text class='subTitle'>{{subTitle}}</text>
+        <view class='foot'>
+          <view class='author'>
+            <image class='avatar' src='{{avatar}}'></image>
+            <!-- <text class='date'>{{ptime}}</text> -->
+            <text class='cate'>{{author}}</text>
+          </view>
+          <view class='iconWrapper'>
+            <image class='icon' src='/images/detail/list/collect.png'></image>
+            <image class='icon' src='/images/detail/list/more.png'></image>
+          </view>
+        </view>
+      </view>
+  </view>
+</template>

@@ -1,0 +1,13 @@
+<view class='indexContainer'>
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            <image src='http://img5.imgtn.bdimg.com/it/u=1787361356,2255599557&fm=26&gp=0.jpg'></image>
+        </view>
+        <text class='title'>界面新闻</text>
+        <button class='bottom' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+            授权登录
+        </button>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>
+

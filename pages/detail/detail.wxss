@@ -1,0 +1,75 @@
+/* pages/detail/detail.wxss */
+.detailContainer{
+  padding: 30rpx 30rpx 200rpx;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.detailContainer .title{
+  font-size: 44rpx;
+}
+.detailContainer .info{
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+.detailContainer .info .date{
+  margin-left: 30rpx;
+  color: #999;
+}
+.detailContainer .content{
+  font-size: 32rpx;
+  line-height: 50rpx;
+  font-weight: 300;
+}
+.detailContainer image{
+  margin: 30rpx auto;
+  width: 100%;
+  height: 400rpx;
+}
+.btnContainer{
+  width: 100%;
+  background: #fff;
+  padding: 10rpx 0;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.btnContainer button{
+  background: #eee;
+  border-radius: 60rpx;
+  padding: 0 36rpx;
+  font-size: 26rpx;
+}
+.btnContainer .share{
+  background: #000;
+  color: #fff;
+}
+.musicWrapper {
+  display: flex;
+  width: 90%;
+  height: 150rpx;
+  background: #eee;
+  margin: 50rpx auto;
+  align-items: center;
+  border-radius: 30rpx;
+  box-sizing: border-box;
+}
+.musicWrapper .coverMusic{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+.musicWrapper .titleMusic{
+  font-size: 30rpx;
+  margin: 0 20rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 350rpx;
+}
+.musicWrapper .musicIcon{
+  width: 70rpx;
+  height: 70rpx;
+}

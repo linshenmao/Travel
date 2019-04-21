@@ -1,0 +1,39 @@
+/* pages/movies/movies.wxss */
+.movieContainer{
+  display: flex;
+  padding: 15rpx 30rpx;
+  align-items: center;
+}
+.movie_img{
+  width: 130rpx;
+  height: 160rpx;
+}
+.movie_detail{
+  display: flex;
+  flex-direction: column;
+  margin: 0 24rpx;
+  width: 62%;
+}
+.movie_detail text{
+  line-height: 36rpx;
+  font-size: 24rpx;
+  color: #666;
+}
+.movie_name{
+  font-size: 28rpx !important;
+  color: #333 !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 90%;
+  margin-bottom: 14rpx;
+}
+.movie_casts{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.movie_rating{
+  color:#FFA500 !important;
+  font-size: 30rpx !important;
+}

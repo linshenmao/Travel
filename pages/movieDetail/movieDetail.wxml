@@ -1,0 +1,24 @@
+<!--pages/movieDetail/movieDetail.wxml-->
+<view class='movieDetailContainer'>
+  <view class='movieWrapper'>
+    <view class='movie-background' style='background: url({{movieDetail.images.large}}) no-repeat center;'></view>
+    <view class='movie_content'>
+      <image class='movie_img' src='{{movieDetail.images.large}}'></image> 
+      <view class='movie_info'>
+      <text class='movie_name'>{{movieDetail.title}} （{{movieDetail.year}}）</text>
+      <view class='ratingBox'>
+        <text class='rating'>{{movieDetail.rating.average}} </text>
+        <text>({{movieDetail.reviews_count}}人评)</text>
+      </view>
+      <text class='movie_year'>{{movieDetail.genres[0]}} {{movieDetail.genres[1]}} {{movieDetail.genres[2]}} / {{movieDetail.countries[0]}}
+      </text>
+      <text class='movie_director'>导演：{{movieDetail.directors[0].name}}</text>
+      <text class='movie_director'>主演：{{movieDetail.casts[0].name}} {{movieDetail.casts[1].name}} {{movieDetail.casts[2].name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class='introWrapper'>
+    <text class='intro'>简介</text>
+    <text class='summary'>{{movieDetail.summary}}</text>
+  </view>
+</view>

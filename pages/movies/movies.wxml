@@ -1,0 +1,15 @@
+<!--pages/movies/movies.wxml-->
+<navigator wx:for='{{movieArr}}' wx:key='{{index}}' url='/pages/movieDetail/movieDetail?index={{index}}'>
+  <view class='movieContainer'>
+    <image class='movie_img' src='{{item.images.large}}'></image>
+    <view class='movie_detail'>
+      <text class='movie_name'>{{item.original_title}}</text>
+      <text>
+      <text class='movie_rating'>{{item.rating.average}}</text>
+      <text> ({{item.reviews_count}}人评)</text>
+      </text>
+      <text class='movie_year'>{{item.genres[0]}} {{item.genres[1]}} {{item.genres[2]}} / {{item.countries[0]}}</text>
+      <text class='movie_casts'>主演：{{item.casts[0].name}} {{item.casts[1].name}} {{item.casts[2].name}}</text>
+    </view>
+  </view>
+</navigator>

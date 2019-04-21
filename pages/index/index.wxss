@@ -1,0 +1,22 @@
+.indexContainer{
+  padding: 100rpx;
+  text-align: center;
+}
+.header{
+  margin: 0 auto;
+}
+.header image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.title{
+  line-height: 80rpx;
+}
+.bottom{
+  background: #f00;
+  border-radius: 50rpx;
+  color: #fff;
+  width: 240rpx;
+  margin: 350rpx auto;
+  padding: 0 40rpx;
+}
